@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+/* global variables */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Odibee+Sans&display=swap');
+
+
+
+/* colors and fonts variables  */
+body {
+  --dark: #011a2c;
+  --brown: #352423;
+  --beige: #f6f7ee;
+  --light-brown: #c89b48;
+  --font-primary: 'Koulen', cursive;
+  --font-secondary: 'Odibee Sans', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::selection{
+  background: var(--beige);
+  color: var(--dark)
 }

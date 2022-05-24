@@ -1,0 +1,138 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 40px;
+  overflow: hidden;
+}
+
+.left-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.photo{
+  width: 400px;
+  margin-top: 20px ;
+}
+
+.text-main{
+  font-size: 4rem;
+  color: var(--beige);
+display: block;
+  font-family: var(--font-secondary);
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 100%;
+  animation: typing 3s steps(31), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing{
+  from {width: 0;}
+}
+@keyframes blink {
+  50% {border-color: transparent;}
+}
+
+.text-name{
+  color: var(--light-brown);
+}
+
+
+
+/* effects */
+
+.text-shadow-drop-br {
+	-webkit-animation: text-shadow-drop-br 0.6s both;
+	        animation: text-shadow-drop-br 0.6s both;
+}
+ /* ----------------------------------------
+ * @animation text-shadow-drop-br
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-shadow-drop-br {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-br {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 5s ease-in-out infinite alternate both;
+	        animation: color-change-2x 5s ease-in-out infinite alternate both;
+}
+/* ----------------------------------------------
+ * animation color-change-2x
+ */
+ @-webkit-keyframes color-change-2x {
+  0% {
+    background: var(--light-brown);
+  }
+  100% {
+    background: var(--dark);
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: var(--dark);
+  }
+  100% {
+    background: var(--brown);
+  }
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+/* ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.bounce-in-bck{animation:bounce-in-bck 3s both}
+ @keyframes bounce-in-bck{0%{transform:scale(7);animation-timing-function:ease-in;opacity:0}38%{transform:scale(1);animation-timing-function:ease-out;opacity:1}55%{transform:scale(1.5);animation-timing-function:ease-in}72%{transform:scale(1);animation-timing-function:ease-out}81%{transform:scale(1.24);animation-timing-function:ease-in}89%{transform:scale(1);animation-timing-function:ease-out}95%{transform:scale(1.04);animation-timing-function:ease-in}100%{transform:scale(1);animation-timing-function:ease-out}}
