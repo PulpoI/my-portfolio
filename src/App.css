@@ -9,10 +9,14 @@ a {
   text-decoration: none;
 }
 
+a:-webkit-any-link {
+  color: unset
+}
+
+
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Odibee+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Odibee+Sans&family=Roboto:ital,wght@1,300&display=swap');
 
 
 /* colors and fonts variables  */
@@ -23,9 +27,12 @@ body {
   --light-brown: #c89b48;
   --font-primary: 'Koulen', cursive;
   --font-secondary: 'Odibee Sans', cursive;
+  --font-text: 'Roboto', sans-serif;
 }
 
 ::selection{
   background: var(--beige);
   color: var(--dark)
 }
+
+

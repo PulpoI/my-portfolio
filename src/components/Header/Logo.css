@@ -1,0 +1,11 @@
+.logo {
+  font-size: 2rem;
+  color: var(--beige);
+
+  font-family: var(--font-secondary);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+
+
+}

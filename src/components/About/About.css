@@ -1,0 +1,24 @@
+.me{
+  height: 500px;
+}
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--beige);
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+line-height: 1.5rem;
+}
+
+.about-content:first-letter {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+
+.about-photo{
+  width: 200px;
+}

@@ -15,17 +15,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 70%;
 }
 
+/* .main-header{
+  min-width: 25%;
+} */
+
 .photo{
-  width: 400px;
+  width: 580px;
   margin-top: 20px ;
+  
+}
+.text-container{
+  width: 630px;
 }
 
 .text-main{
   font-size: 4rem;
   color: var(--beige);
-display: block;
+  display: block;
   font-family: var(--font-secondary);
   white-space: nowrap;
   border-right: 4px solid;
@@ -45,6 +54,46 @@ display: block;
   color: var(--light-brown);
 }
 
+.menu {
+  display: none;
+}
+
+/* media query smartphone */
+@media (max-width: 576px){
+  .text-container{
+    width: unset;
+  }
+  .text-main{
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  .main-header{
+    display: none;
+  }
+  .left-main{
+    height: 70%;
+    justify-content: flex-start;
+  }
+  .photo {
+    width: 400px;
+  }
+}
+
+
+/* media query tablets */
+@media (max-width: 991.98px){
+  .main{
+    flex-direction: column;
+  }
+  .main-header{
+    display: none;
+  }
+  .menu {
+    display: flex;
+    color: var(--beige);
+    font-size: 3rem;
+  }
+}
 
 
 /* effects */
@@ -53,10 +102,7 @@ display: block;
 	-webkit-animation: text-shadow-drop-br 0.6s both;
 	        animation: text-shadow-drop-br 0.6s both;
 }
- /* ----------------------------------------
- * @animation text-shadow-drop-br
- * ----------------------------------------
- */
+ /* @animation text-shadow-drop-br */
  @-webkit-keyframes text-shadow-drop-br {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -73,15 +119,11 @@ display: block;
     text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
   }
 }
-
-
 .color-change-2x {
 	-webkit-animation: color-change-2x 5s ease-in-out infinite alternate both;
 	        animation: color-change-2x 5s ease-in-out infinite alternate both;
 }
-/* ----------------------------------------------
- * animation color-change-2x
- */
+/* animation color-change-2x */
  @-webkit-keyframes color-change-2x {
   0% {
     background: var(--light-brown);
@@ -136,3 +178,26 @@ display: block;
 
 .bounce-in-bck{animation:bounce-in-bck 3s both}
  @keyframes bounce-in-bck{0%{transform:scale(7);animation-timing-function:ease-in;opacity:0}38%{transform:scale(1);animation-timing-function:ease-out;opacity:1}55%{transform:scale(1.5);animation-timing-function:ease-in}72%{transform:scale(1);animation-timing-function:ease-out}81%{transform:scale(1.24);animation-timing-function:ease-in}89%{transform:scale(1);animation-timing-function:ease-out}95%{transform:scale(1.04);animation-timing-function:ease-in}100%{transform:scale(1);animation-timing-function:ease-out}}
+
+
+
+ .slide-in-blurred-bl {
+	animation: slide-in-blurred-bl 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+/* ----------------------------------------------
+  animation slide-in-blurred-bl */
+ @keyframes slide-in-blurred-bl {
+  0% {
+    transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+    transform-origin: 100% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) skew(0deg, 0deg);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}

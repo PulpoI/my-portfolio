@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -7,20 +8,20 @@ const Header = () => {
       <header className="header color-change-2x">
         <nav>
           <ul className="focus-in-contract-bck">
-            <a href="">
+            <Link to="/about">
               <li className="text-flicker-in-glow">
                 <span className="flicker-3">{"<"}</span>
                 Sobre mi
                 <span>{" />"}</span>
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link to="/projects">
               <li className="text-flicker-in-glow">
                 <span className="flicker-3">{"<"}</span>
                 Proyectos
                 <span>{" />"}</span>
               </li>
-            </a>
+            </Link>
             <a href="">
               <li className="text-flicker-in-glow">
                 <span className="flicker-3">{"<"}</span>
