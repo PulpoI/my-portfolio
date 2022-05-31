@@ -1,0 +1,99 @@
+/* .project{
+
+  background-image: url("../../assets/1.png");
+  height: 280px;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project:hover{
+  background-image: url("../../assets/Animation.gif");
+  height: 280px;
+  width: 380px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+} */
+
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  
+  color: var(--beige);
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+line-height: 1.5rem;
+
+height: 470px;
+width: 750px;
+
+overflow-y: scroll;
+}
+
+.project-img{
+  width: 400px;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 700px;
+  height: 480px;
+  
+  border: 5px inset var(--beige)  ;
+  border-radius: 1rem;
+  
+  padding: 1rem;
+
+ 
+  margin-bottom: 1rem;
+
+
+}
+
+.project-container:hover{
+  border: 5px groove var(--beige);
+  border-radius: 1rem;
+}
+
+
+
+.project-title, .project-img{
+  margin-bottom: 1rem;
+}
+
+
+
+
+/*     SCROLL    */
+
+.project-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.project-content::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.project-content::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.project-content::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.project-content::-webkit-scrollbar-thumb {
+  background-color: var(--light-brown);
+  border-radius: 20px;
+  border: 2px solid var(--beige);
+}
+
+.project-content::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}

@@ -5,12 +5,15 @@
 .about-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  
+  
 
   color: var(--beige);
   font-family: var(--font-text);
   font-size: 1.1rem;
 line-height: 1.5rem;
+
 }
 
 .about-content:first-letter {
@@ -20,5 +23,5 @@ line-height: 1.5rem;
 
 
 .about-photo{
-  width: 200px;
+  width: 180px;
 }

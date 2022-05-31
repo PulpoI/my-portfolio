@@ -22,13 +22,20 @@ function About() {
         <Loader />
       ) : (
         <>
+          <div>
+            <h2 className="section-title">SOBRE MI</h2>
+          </div>
           <div className="about-content slide-in-blurred-bl">
+            <div>
+              <img className="about-photo" src={photo} alt="" />
+            </div>
             <div>
               <h3>
                 Soy de <strong>Chacabuco</strong>, Ciudad ubicada en la
                 Provincia de
                 <strong> Buenos Aires, Argentina.</strong>
               </h3>
+
               <h4>
                 Creativo y detallista a la hora de realizar aplicaciones web
                 para asegurar la experiencia del usuario. <br /> Fanático de la
@@ -36,6 +43,11 @@ function About() {
                 <br /> Busco un empleo donde pueda dar lo mejor y crecer
                 profesionalmente.
               </h4>
+            </div>
+            <div>
+              <button>
+                <h3>Descarga mi CV</h3>
+              </button>
             </div>
           </div>
         </>

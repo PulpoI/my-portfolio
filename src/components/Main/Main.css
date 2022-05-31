@@ -58,6 +58,12 @@
   display: none;
 }
 
+.section-title{
+  margin-top: 3rem;
+  color: var(--light-brown);
+  font-family: var(--font-secondary);
+}
+
 /* media query smartphone */
 @media (max-width: 576px){
   .text-container{
