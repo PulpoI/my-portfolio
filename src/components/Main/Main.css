@@ -1,14 +1,21 @@
 .main {
   height: 100vh;
   width: 100%;
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding-inline: 40px;
   overflow: hidden;
+position: relative;
 }
+
+
+
+
+
+
 
 .left-main{
   display: flex;
@@ -125,10 +132,10 @@
     text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
   }
 }
-.color-change-2x {
+/* .color-change-2x {
 	-webkit-animation: color-change-2x 5s ease-in-out infinite alternate both;
 	        animation: color-change-2x 5s ease-in-out infinite alternate both;
-}
+} */
 /* animation color-change-2x */
  @-webkit-keyframes color-change-2x {
   0% {

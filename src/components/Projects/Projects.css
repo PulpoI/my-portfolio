@@ -57,8 +57,8 @@ overflow-y: scroll;
 }
 
 .project-container:hover{
-  border: 5px groove var(--beige);
-  border-radius: 1rem;
+  background-color: #c89b4807;
+ 
 }
 
 

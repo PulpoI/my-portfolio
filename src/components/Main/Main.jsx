@@ -1,5 +1,7 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import Header from "../Header/Header";
+import video from "../../assets/202206012002.mp4";
 
 import "./Main.css";
 
