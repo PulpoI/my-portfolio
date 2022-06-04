@@ -5,9 +5,12 @@ import "./Projects.css";
 
 import img1 from "../../assets/Animation.gif";
 import storeTuco from "../../assets/tuco-remeras.png";
+import storeTuco2 from "../../assets/tuco-remeras-back.png";
+import Project from "./Project";
 
 function Projects() {
   const [loading, setLoading] = useState(false);
+  // const [photo, setPhoto] = useState(storeTuco);
 
   useEffect(() => {
     setLoading(true);
@@ -16,6 +19,12 @@ function Projects() {
     }, 300);
   }, []);
 
+  // function changeImage() {
+  //   setPhoto(storeTuco2);
+  // }
+  // function backImage() {
+  //   setPhoto(storeTuco);
+  // }
   return (
     <>
       <Logo />
@@ -27,24 +36,13 @@ function Projects() {
             <h2 className="section-title">PROYECTOS</h2>
           </div>
           <div className="project-content slide-in-blurred-bl">
-            {/* <div className="project"></div> */}
-            <div className="project-container">
-              <h3 className="project-title">Tuco Remeras</h3>
-              <img className="project-img" src={storeTuco} alt="" />
-              <p className="project-description">
-                Tuco Remeras es mi emprendimiento de estampados textiles. El
-                desarrollo esta adaptado de una plantilla.
-              </p>
-            </div>
-
-            <div className="project-container">
-              <h3 className="project-title">Tuco Remeras</h3>
-              <img className="project-img" src={storeTuco} alt="" />
-              <p className="project-description">
-                Tuco Remeras es mi emprendimiento de estampados textiles. El
-                desarrollo esta adaptado de una plantilla.
-              </p>
-            </div>
+            <Project
+              title="Tuco Remeras"
+              photoFront={storeTuco}
+              photoBack={storeTuco2}
+              description="Tuco Remeras es mi emprendimiento de estampados textiles. El
+              desarrollo esta adaptado de una plantilla."
+            />
           </div>
         </>
       )}

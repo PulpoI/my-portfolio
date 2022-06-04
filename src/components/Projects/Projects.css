@@ -37,6 +37,8 @@ overflow-y: scroll;
   width: 400px;
 }
 
+
+
 .project-container{
   display: flex;
   flex-direction: column;
