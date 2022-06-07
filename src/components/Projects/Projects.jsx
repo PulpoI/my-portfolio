@@ -3,9 +3,12 @@ import Logo from "../Header/Logo";
 import Loader from "../Loader/Loader";
 import "./Projects.css";
 
-import img1 from "../../assets/Animation.gif";
+//Fotos
 import storeTuco from "../../assets/tuco-remeras.png";
 import storeTuco2 from "../../assets/tuco-remeras-back.png";
+import cgFoto from "../../assets/cg-fotografia.png";
+import cgFoto2 from "../../assets/cg-fotografia-back.png";
+
 import Project from "./Project";
 
 function Projects() {
@@ -40,6 +43,13 @@ function Projects() {
               title="Tuco Remeras"
               photoFront={storeTuco}
               photoBack={storeTuco2}
+              description="Tuco Remeras es mi emprendimiento de estampados textiles. El
+              desarrollo esta adaptado de una plantilla."
+            />
+            <Project
+              title="Camila Gonzalez - Fotógrafa"
+              photoFront={cgFoto}
+              photoBack={cgFoto2}
               description="Tuco Remeras es mi emprendimiento de estampados textiles. El
               desarrollo esta adaptado de una plantilla."
             />
