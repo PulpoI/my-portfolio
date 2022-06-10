@@ -60,3 +60,20 @@ body {
 
   mix-blend-mode: overlay;
 }
+
+.project-button{
+  padding: 6px 20px;
+  margin: 0px 20px;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  color: var(--dark);
+  background-color:var(--light-brown);
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+}
+
+.project-button:hover{
+  border: 2px solid var(--beige);
+  background-color: var(--light-brown);
+  color: var(--beige);
+}

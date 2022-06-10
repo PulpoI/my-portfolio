@@ -45,9 +45,13 @@ function About() {
               </h4>
             </div>
             <div>
-              <button>
-                <h3>Descarga mi CV</h3>
-              </button>
+              <a
+                href="https://drive.google.com/file/d/1rlMv2X09r86xb1pXP7aQhTOrZ1R3Jd0D/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="project-button">Descarga mi CV</button>
+              </a>{" "}
             </div>
           </div>
         </>

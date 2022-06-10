@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./Projects.css";
 
-function Project({ title, photoFront, photoBack, description }) {
+function Project({
+  title,
+  photoFront,
+  photoBack,
+  description,
+  linkRepo,
+  linkDemo,
+}) {
   const [photo, setPhoto] = useState(photoFront);
 
   function mouseHover() {
@@ -21,6 +28,14 @@ function Project({ title, photoFront, photoBack, description }) {
         alt={`Imagen del proyecto ${title}`}
       />
       <p className="project-description">{description}</p>
+      <div className="project-buttons">
+        <a href={linkRepo} target="_blank" rel="noreferrer">
+          <button className="project-button">Repo</button>
+        </a>
+        <a href={linkDemo} target="_blank" rel="noreferrer">
+          <button className="project-button">Demo</button>
+        </a>
+      </div>
     </div>
   );
 }
