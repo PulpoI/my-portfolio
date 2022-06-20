@@ -1,9 +1,10 @@
 import Header from "../Header/Header";
 import Logo from "../Header/Logo";
 import "./About.css";
-import photo from "./../../assets/profile.png";
+import photo from "./../../assets/profile-2.png";
 import { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
+import { Link } from "react-router-dom";
 
 function About() {
   const [loading, setLoading] = useState(false);
@@ -22,29 +23,24 @@ function About() {
         <Loader />
       ) : (
         <>
-          <div>
-            <h2 className="section-title">SOBRE MI</h2>
-          </div>
-          <div className="about-content slide-in-blurred-bl">
+          <div className="about-content slide-in-blurred-bl ">
+            <div>
+              <h2 className="section-title">SOBRE MI</h2>
+            </div>
             <div>
               <img className="about-photo" src={photo} alt="" />
             </div>
             <div>
-              <h3>
-                Soy de <strong>Chacabuco</strong>, Ciudad ubicada en la
-                Provincia de
-                <strong> Buenos Aires, Argentina.</strong>
-              </h3>
-
-              <h4>
-                Creativo y detallista a la hora de realizar aplicaciones web
-                para asegurar la experiencia del usuario. <br /> Fanático de la
-                tecnología y con ganas de crecer en el mundo de la Programación.{" "}
-                <br /> Busco un empleo donde pueda dar lo mejor y crecer
-                profesionalmente.
-              </h4>
+              <h3 className="mt-1">¡Hola! Bienvenido a mi portfolio.</h3>
+              <p>
+                Soy Desarrollador web, te invito a revisar mis{" "}
+                <Link style={{ color: "#c89b48" }} to={"/projects"}>
+                  proyectos
+                </Link>
+                .
+              </p>
             </div>
-            <div>
+            <div className="mt-1">
               <a
                 href="https://drive.google.com/file/d/1rlMv2X09r86xb1pXP7aQhTOrZ1R3Jd0D/view?usp=sharing"
                 target="_blank"

@@ -40,6 +40,7 @@ function Projects() {
           <div>
             <h2 className="section-title">PROYECTOS</h2>
           </div>
+
           <div className="project-content slide-in-blurred-bl">
             <Project
               title="Tuco Store"

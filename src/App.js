@@ -5,6 +5,7 @@ import video from "./assets/202206012002.mp4";
 import Perfil from "./components/Perfil/Perfil";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Screening from "./components/Screening/Screening";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           path="/projects"
           element={<Main render={<Projects />} />}
         />
+        <Route exact path="/screening" element={<Screening />} />
       </Routes>
     </div>
   );
