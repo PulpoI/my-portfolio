@@ -57,7 +57,30 @@
   bottom: 60px;
 }
 
-
+@media (max-width: 576px){
+  .project-container{
+    width: 100%;
+   
+    border: none;
+   
+  }
+  .project-content{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%
+  }
+  .project-img{
+    width: 100%;
+  }
+  .project-description {
+    padding: 6rem 0rem 1rem 0rem;
+  }
+  .project-buttons {
+   
+    bottom: 81px;
+}
+  
+}
 
 
 /*     SCROLL    */

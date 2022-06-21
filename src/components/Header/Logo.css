@@ -4,6 +4,15 @@
   top: 0px;
   left: 5px;
 }
+@media (max-width: 576px){
+.logo{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+}
+
 
 .wobble-ver-left:hover {
 	animation: wobble-ver-left 1.8s infinite  both ;

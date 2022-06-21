@@ -40,6 +40,15 @@ body {
   position: relative;
   box-shadow: inset -470px 0px 1000px 20px var(--dark);
 }
+
+@media (max-width: 576px){
+  .app{
+    
+    box-shadow: inset -93px -297px 1008px -110px var(--dark);
+
+  }
+}
+
 .video {
   position: absolute;
   top: 0;

@@ -6,6 +6,7 @@ import Perfil from "./components/Perfil/Perfil";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Screening from "./components/Screening/Screening";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main render={<Perfil />} />} />
         <Route exact path="/about" element={<Main render={<About />} />} />
+
         <Route
           exact
           path="/projects"

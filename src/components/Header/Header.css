@@ -13,6 +13,11 @@ header li {
   
 }
 
+/* bootstrap */
+.dropdown-item:hover, .dropdown-item:active{
+
+  background-color: inherit !important;
+}
 /* effects */
 
 .text-flicker-in-glow:hover {
