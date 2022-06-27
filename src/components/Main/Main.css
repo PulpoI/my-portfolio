@@ -23,6 +23,9 @@ position: relative;
   display: none;
 }
 
+.navbar-dark .navbar-toggler {
+  border-color: var(--beige) !important;
+}
 
 .bg-dark{
   /* background-color: var(--dark) !important; */
@@ -85,11 +88,19 @@ position: relative;
 
 /* media query smartphone */
 @media (max-width: 576px){
+  /* p{
+    text-align: start;
+  } */
   .header-smart{
     display: inherit;
   }
   .navbar-dark .navbar-toggler{
+    padding: 0 7rem;
     margin: auto;
+    
+  }
+  .bg-dark{
+    background-color: #011a2cec !important;
   }
   .navbar-toggler{
     font-size: 3rem;

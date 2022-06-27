@@ -23,15 +23,15 @@ function About() {
         <Loader />
       ) : (
         <>
+          <div>
+            <h2 className="section-title">HOLA!</h2>
+          </div>
           <div className="about-content slide-in-blurred-bl ">
             <div>
-              <h2 className="section-title">SOBRE MI</h2>
+              {/* <img className="about-photo" src={photo} alt="" /> */}
             </div>
             <div>
-              <img className="about-photo" src={photo} alt="" />
-            </div>
-            <div>
-              <h3 className="mt-1">¡Hola! Bienvenido a mi portfolio.</h3>
+              <h3 className="mt-1">Bienvenido/a a mi portfolio.</h3>
               <p>
                 Soy Desarrollador web, te invito a revisar mis{" "}
                 <Link style={{ color: "#c89b48" }} to={"/projects"}>
@@ -46,8 +46,11 @@ function About() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="project-button">Descarga mi CV</button>
+                <button className="project-button">CV</button>
               </a>{" "}
+              <Link to={"/projects"}>
+                <button className="project-button"> Proyectos</button>
+              </Link>{" "}
             </div>
           </div>
         </>

@@ -28,6 +28,7 @@ body {
   --font-primary: 'Koulen', cursive;
   --font-secondary: 'Odibee Sans', cursive;
   --font-text: 'Roboto', sans-serif;
+  background-color: initial;
 }
 
 ::selection{
@@ -44,7 +45,7 @@ body {
 @media (max-width: 576px){
   .app{
     
-    box-shadow: inset -93px -297px 1008px -110px var(--dark);
+    /* box-shadow: inset -93px -297px 1008px 100px var(--dark); */
 
   }
 }

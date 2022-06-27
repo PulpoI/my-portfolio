@@ -14,9 +14,19 @@ header li {
 }
 
 /* bootstrap */
+.navbar-dark .navbar-toggler {
+  border-color: var(--dark) !important;
+}
+.navbar-dark .navbar-toggler {
+  color: var(--dark);
+}
 .dropdown-item:hover, .dropdown-item:active{
 
   background-color: inherit !important;
+}
+.navbar-toggler-icon{
+  width: 70px;
+  height: 60px;
 }
 /* effects */
 

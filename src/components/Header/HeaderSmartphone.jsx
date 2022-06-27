@@ -1,22 +1,12 @@
-import {
-  Button,
-  Container,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-  Offcanvas,
-} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
-import CloseButton from "react-bootstrap/CloseButton";
 import Header from "./Header";
 
 function HeaderSmartphone() {
   return (
     <>
       <Navbar
-        collapseOnSelect
+        collapseOnSelect="false"
         expand="lg"
         bg="dark"
         variant="dark"

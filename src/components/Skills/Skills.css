@@ -1,0 +1,37 @@
+/* .slider-container{
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(250px * 10));
+  } 
+  100% {
+    transform: translateX(0);
+  } 
+}
+
+
+.slider {
+  height: 470px;
+  /* margin: auto; */
+  overflow: hidden;
+  position: relative;
+  /* width: auto; */
+}
+
+.slider .slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 20);
+}
+
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}

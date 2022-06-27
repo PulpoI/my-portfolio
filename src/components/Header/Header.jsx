@@ -28,7 +28,7 @@ const Header = () => {
               </Link>
             </NavDropdown.Item>
             <NavDropdown.Item href="#">
-              <Link to="/">
+              <Link to="/skills">
                 <li className="text-flicker-in-glow">
                   <span className="flicker-3">{"<"}</span>
                   Skills
