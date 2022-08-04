@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <video
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop="loop"
           muted
-          defaultMuted
-          playsinline
+          defaultmuted="true"
+          playsInline
           preload="auto"
           className="video"
           width={200}

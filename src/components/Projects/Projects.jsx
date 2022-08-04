@@ -15,6 +15,8 @@ import donaMarta from "../../assets/dona-marta.png";
 import donaMarta2 from "../../assets/dona-marta-back.png";
 import creador from "../../assets/creador.png";
 import creador1 from "../../assets/creador-back.png";
+import presupuestador from "../../assets/presupuestador.png";
+import presupuestador1 from "../../assets/presupuestador-back.png";
 
 //Components
 import Project from "./Project";
@@ -48,6 +50,15 @@ function Projects() {
               photoBack={storeTuco2}
               description="E-commerce desarrollado con React.js. Axios, 
               Firebase, Bootstrap, React-bootstrap, React-router-dom."
+              linkRepo="https://github.com/PulpoI/tucostore"
+              linkDemo="https://store.tucoremeras.com.ar/"
+            />
+
+            <Project
+              title="Presupuestador"
+              photoFront={presupuestador}
+              photoBack={presupuestador1}
+              description="Presupuestador de servicio de Fotografía. Realizado en React.js. Firebase, Bootstrap, React-router-dom."
               linkRepo="https://github.com/PulpoI/tucostore"
               linkDemo="https://store.tucoremeras.com.ar/"
             />

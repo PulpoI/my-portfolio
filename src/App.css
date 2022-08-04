@@ -80,10 +80,12 @@ body {
   background-color:var(--light-brown);
   border: 2px solid var(--dark);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .project-button:hover{
   border: 2px solid var(--beige);
   background-color: var(--light-brown);
   color: var(--beige);
+  transition: all 0.2s;
 }

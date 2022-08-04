@@ -15,7 +15,10 @@
   } 
 }
 
-
+.slider-container {
+  position: relative;
+    top: 12rem;
+}
 .slider {
   height: 470px;
   /* margin: auto; */

@@ -4,7 +4,7 @@ import "./Loader.css";
 const Loader = () => {
   return (
     <>
-      <div class="lds-dual-ring"></div>
+      <div className="lds-dual-ring"></div>
     </>
   );
 };
