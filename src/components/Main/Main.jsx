@@ -6,6 +6,7 @@ import HeaderSmartphone from "../Header/HeaderSmartphone";
 import menu from "../../assets/menu.png";
 
 import "./Main.css";
+import { Footer } from "../Footer/Footer";
 
 const Main = ({ render }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ const Main = ({ render }) => {
             <img src={menu} alt="menu" className="menu-img" />
           </button> */}
         </div>
+        {/* <Footer /> */}
       </div>
     </>
   );

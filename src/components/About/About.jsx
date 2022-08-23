@@ -23,7 +23,7 @@ function About() {
         <Loader />
       ) : (
         <>
-          <div>
+          <div className="slide-in-blurred-bl">
             <h2 className="section-title">HOLA!</h2>
           </div>
           <div className="about-content slide-in-blurred-bl ">
@@ -31,8 +31,8 @@ function About() {
               {/* <img className="about-photo" src={photo} alt="" /> */}
             </div>
             <div>
-              <h3 className="mt-1">Bienvenido/a a mi portfolio.</h3>
-              <p>
+              <h3 className="mt-1 mx-2">Bienvenido/a a mi portfolio.</h3>
+              <p className="mx-2">
                 Soy Desarrollador web, te invito a revisar mis{" "}
                 <Link style={{ color: "#c89b48" }} to={"/projects"}>
                   proyectos

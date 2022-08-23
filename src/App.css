@@ -71,8 +71,11 @@ body {
   mix-blend-mode: overlay;
 }
 
+
+
 .project-button{
-  padding: 6px 20px;
+  width: 70px;
+  height: 35px;
   margin: 0px 20px;
   font-family: var(--font-secondary);
   font-size: 1.1rem;

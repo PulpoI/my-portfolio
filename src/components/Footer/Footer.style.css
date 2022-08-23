@@ -1,0 +1,24 @@
+.footer-items {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  bottom: 1rem;
+  position: absolute;
+}
+
+.footer-item i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer-item i:hover {
+  color: var(--light-brown);
+  transform: scale(1.1);
+
+  transition: 0.3s ease-in-out;
+}
+
+/* .footer-items{
+  margin-top: 1rem
+} */

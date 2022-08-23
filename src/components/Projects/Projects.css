@@ -8,11 +8,45 @@
   font-size: 1.1rem;
   line-height: 1.5rem;
 
-  height: 470px;
+  height: 100vh;
   width: 750px;
 
   overflow-y: scroll;
 }
+
+@media (min-width: 970px){
+  .project-content {
+    width: 100%;
+    height: 80vh !important;
+    overflow-x: hidden;
+  }
+  .project-container{
+    width: 100% !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    padding: 12rem 2rem!important;
+  }
+  .project-description{
+  bottom: 85px;
+  position: relative;
+  padding: 1rem 2rem!important
+  }
+  .project-title{
+    width: 200px;
+  }
+  
+.project-buttons{
+ position: initial !important;
+ display: flex;
+ flex-direction: column;
+ justify-content:space-between;
+ height: 5rem;
+}
+.project-img{
+  width: 500px !important;
+}
+}
+
 
 .project-title{
   font-family: var(--font-primary);
@@ -26,14 +60,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   width: 700px;
   height: 470px;
-  
-  border: 1px inset var(--beige)  ;
+/*   
+  border: 0.1rem inset var(--beige)  ; */
   border-radius: 1rem;
   
-  padding: 1rem;
+  padding: 1rem 2rem;
+  
 
   margin-bottom: 1rem;
 }

@@ -38,3 +38,86 @@
   height: 100px;
   width: 250px;
 }
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 470px;
+  padding-top: 2rem;
+}
+
+.skills-item i {
+  font-size:6rem;
+  color: #fff;
+}
+
+
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+.skills-item h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* hovers logos */
+.skills-item .bxl-html5:hover{
+  transform: scale(1.1);
+  color: #F75421;
+  transition: 0.3s  ease-in-out;
+}
+.skills-item .bxl-css3:hover{
+  transform: scale(1.1);
+  color: #2196f3;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-javascript:hover{
+  transform: scale(1.1);
+  color: #F0DB4F;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-react:hover{
+  transform: scale(1.1);
+  color: #61DBFB;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-redux:hover{
+  transform: scale(1.1);
+  color: #764ABC;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-jquery:hover{
+  transform: scale(1.1);
+  color: #0868AB;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-sass:hover{
+  transform: scale(1.1);
+  color: #CD669A;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-bootstrap:hover{
+  transform: scale(1.1);
+  color: #7309F5;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-git:hover{
+  transform: scale(1.1);
+  color: #DE4C36;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-github:hover{
+  transform: scale(1.1);
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  text-shadow: gray 0px 0px 2px;
+}

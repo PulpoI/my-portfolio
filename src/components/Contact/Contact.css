@@ -1,0 +1,22 @@
+.contact-items {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.contact-item i {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.contact-item i:hover {
+  color: var(--light-brown);
+  transform: scale(1.1);
+
+  transition: 0.3s ease-in-out;
+}
+
+.contact-items{
+  margin-top:3rem
+}

@@ -1,4 +1,5 @@
 import photo from "../../assets/perfil.png";
+import Button from "../Button/Button";
 
 function Perfil() {
   return (

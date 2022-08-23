@@ -38,17 +38,17 @@ function Projects() {
       {loading ? (
         <Loader />
       ) : (
-        <>
+        <div className="project-content slide-in-blurred-bl">
           <div>
             <h2 className="section-title">PROYECTOS</h2>
           </div>
 
-          <div className="project-content slide-in-blurred-bl">
+          <div className="project-content ">
             <Project
               title="Tuco Store"
               photoFront={storeTuco}
               photoBack={storeTuco2}
-              description="E-commerce desarrollado con React.js. Axios, 
+              description="E-commerce desarrollado con React.js. Axios,
               Firebase, Bootstrap, React-bootstrap, React-router-dom."
               linkRepo="https://github.com/PulpoI/tucostore"
               linkDemo="https://store.tucoremeras.com.ar/"
@@ -59,8 +59,8 @@ function Projects() {
               photoFront={presupuestador}
               photoBack={presupuestador1}
               description="Presupuestador de servicio de Fotografía. Realizado en React.js. Firebase, Bootstrap, React-router-dom."
-              linkRepo="https://github.com/PulpoI/tucostore"
-              linkDemo="https://store.tucoremeras.com.ar/"
+              linkRepo="https://github.com/PulpoI/presupuestador"
+              linkDemo="https://presupuestador.camilagonzalez.ar/"
             />
 
             <Project
@@ -99,7 +99,7 @@ function Projects() {
               linkDemo="https://tucoremeras.com.ar/"
             />
           </div>
-        </>
+        </div>
       )}
     </>
   );

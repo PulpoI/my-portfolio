@@ -1,16 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import react from "../../assets/icons/001-physics.png";
-import javascript from "../../assets/icons/002-js.png";
-import css from "../../assets/icons/css.png";
-import sass from "../../assets/icons/009-sass.png";
-import html from "../../assets/icons/008-html-5.png";
-import bootstrap from "../../assets/icons/004-bootstrap.png";
-import git from "../../assets/icons/git.png";
-import github from "../../assets/icons/003-github.png";
-import photoshop from "../../assets/icons/005-photoshop.png";
-import xd from "../../assets/icons/006-xd.png";
-
 import "./Skills.css";
 import Logo from "../Header/Logo";
 import Loader from "../Loader/Loader";
@@ -29,12 +18,55 @@ const Skills = () => {
       {loading ? (
         <Loader />
       ) : (
-        <>
-          <Logo />
+        <div className="slide-in-blurred-bl">
           <div>
-            <h2 className="section-title">SKILLS</h2>
+            <h2 className="section-title text-center">SKILLS</h2>
           </div>
-          <div className="slider-container slide-in-blurred-bl">
+
+          <div className="skills-container slide-in-blurred-bl">
+            <div className="skills-item">
+              <i className="bx bxl-html5"> </i>
+              <h3>HTML</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-css3"> </i>
+              <h3>CSS</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-javascript"> </i>
+              <h3>JavaScript</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-react"> </i>
+              <h3>React</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-redux"> </i>
+              <h3>Redux</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-jquery"> </i>
+              <h3>jQuery</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-sass"> </i>
+              <h3>SASS</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-bootstrap"> </i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-git"> </i>
+              <h3>GIT</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-github"> </i>
+              <h3>GitHub</h3>
+            </div>
+          </div>
+
+          {/* <div className="slider-container slide-in-blurred-bl">
             <div className="slider">
               <div className="slide-track">
                 <div className="slide">
@@ -66,6 +98,7 @@ const Skills = () => {
                   <h3>Git</h3>
                 </div>
                 <div className="slide">
+              
                   <img src={github} alt="icon" height={100} width={100} />
                   <h3>Github</h3>
                 </div>
@@ -110,8 +143,8 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </>
+          </div> */}
+        </div>
       )}
     </>
   );

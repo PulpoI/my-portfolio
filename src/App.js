@@ -6,6 +6,8 @@ import Perfil from "./components/Perfil/Perfil";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -38,7 +40,13 @@ function App() {
             path="/skills"
             element={<Main render={<Skills />} />}
           ></Route>
+          <Route
+            exact
+            path="/contact"
+            element={<Main render={<Contact />} />}
+          ></Route>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

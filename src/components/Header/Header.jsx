@@ -37,7 +37,7 @@ const Header = () => {
               </Link>
             </NavDropdown.Item>
             <NavDropdown.Item href="#">
-              <Link to="/">
+              <Link to="/contact">
                 <li className="text-flicker-in-glow">
                   <span className="flicker-3">{"<"}</span>
                   Contacto

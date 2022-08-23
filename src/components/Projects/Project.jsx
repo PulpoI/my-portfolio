@@ -27,7 +27,7 @@ function Project({
         src={photo}
         alt={`Imagen del proyecto ${title}`}
       />
-      <p className="project-description">{description}</p>
+      {/* <p className="project-description">{description}</p> */}
       <div className="project-buttons">
         <a href={linkRepo} target="_blank" rel="noreferrer">
           <button className="project-button">Repo</button>
