@@ -19,7 +19,10 @@ function Project({
   }
   return (
     <div className="project-container">
-      <h3 className="project-title">{title}</h3>
+      <div className="project-text">
+        <h3 className="project-title">{title}</h3>
+        <p className="project-description">{description}</p>
+      </div>
       <img
         onMouseOver={mouseHover}
         onMouseOut={backImage}
@@ -27,7 +30,7 @@ function Project({
         src={photo}
         alt={`Imagen del proyecto ${title}`}
       />
-      {/* <p className="project-description">{description}</p> */}
+
       <div className="project-buttons">
         <a href={linkRepo} target="_blank" rel="noreferrer">
           <button className="project-button">Repo</button>

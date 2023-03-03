@@ -17,6 +17,10 @@ import creador from "../../assets/creador.png";
 import creador1 from "../../assets/creador-back.png";
 import presupuestador from "../../assets/presupuestador.png";
 import presupuestador1 from "../../assets/presupuestador-back.png";
+import turnero from "../../assets/turnero.png";
+import turnero2 from "../../assets/turnero-back.png";
+import dalp from "../../assets/diseno-a.png";
+import dalp2 from "../../assets/diseno-a-back.png";
 
 //Components
 import Project from "./Project";
@@ -44,6 +48,24 @@ function Projects() {
           </div>
 
           <div className="project-content ">
+            <Project
+              title="DALP"
+              photoFront={dalp}
+              photoBack={dalp2}
+              description="Marketplace desarrollado con Wordpress."
+              linkRepo="https://github.com/PulpoI/turnero"
+              linkDemo="https://dalp.com.ar/"
+            />
+            <Project
+              title="Turnero"
+              photoFront={turnero2}
+              photoBack={turnero}
+              description="E-commerce desarrollado con React.js. Axios,
+              Firebase, Bootstrap, React-bootstrap, React-router-dom."
+              linkRepo="https://github.com/PulpoI/turnero"
+              linkDemo="https://turnero.pulpol.com.ar/"
+            />
+            <hr />
             <Project
               title="Tuco Store"
               photoFront={storeTuco}

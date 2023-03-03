@@ -14,6 +14,11 @@
   overflow-y: scroll;
 }
 
+.project-text{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 970px){
   .project-content {
     width: 100%;
@@ -25,11 +30,6 @@
     flex-direction: row !important;
     justify-content: space-evenly;
     padding: 12rem 2rem!important;
-  }
-  .project-description{
-  bottom: 85px;
-  position: relative;
-  padding: 1rem 2rem!important
   }
   .project-title{
     width: 200px;
@@ -44,6 +44,9 @@
 }
 .project-img{
   width: 500px !important;
+}
+.section-title {
+  margin-top: 0;
 }
 }
 
@@ -80,12 +83,6 @@
   margin-bottom: 1rem;
 }
 
-.project-description{
-  bottom: 85px;
-  position: relative;
-  padding: 1rem 240px 1rem 0rem
-}
-
 .project-buttons{
   position: relative;
   bottom: 60px;
@@ -107,11 +104,6 @@
   }
   .project-img{
     width: 323px;
-  }
-  .project-description {
-    bottom: 85px;
-    position: initial;
-    padding: 0
   }
   .project-buttons {
    position: initial;
