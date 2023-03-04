@@ -64,6 +64,10 @@ const Skills = () => {
               <i className="bx bxl-github"> </i>
               <h3>GitHub</h3>
             </div>
+            <div className="skills-item">
+              <i className="bx bxl-wordpress"> </i>
+              <h3>WordPress </h3>
+            </div>
           </div>
 
           {/* <div className="slider-container slide-in-blurred-bl">

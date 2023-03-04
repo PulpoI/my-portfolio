@@ -121,3 +121,8 @@
   transition: 0.3s ease-in-out;
   text-shadow: gray 0px 0px 2px;
 }
+.skills-item .bxl-wordpress:hover{
+  transform: scale(1.1);
+  color: #1B769C;
+  transition: 0.3s ease-in-out;
+}

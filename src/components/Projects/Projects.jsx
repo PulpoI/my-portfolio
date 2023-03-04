@@ -21,6 +21,8 @@ import turnero from "../../assets/turnero.png";
 import turnero2 from "../../assets/turnero-back.png";
 import dalp from "../../assets/diseno-a.png";
 import dalp2 from "../../assets/diseno-a-back.png";
+import tiendaTuco from "../../assets/tuco-tienda.png";
+import tiendaTuco2 from "../../assets/tuco-tienda-back.png";
 
 //Components
 import Project from "./Project";
@@ -53,15 +55,22 @@ function Projects() {
               photoFront={dalp}
               photoBack={dalp2}
               description="Marketplace desarrollado con Wordpress."
-              linkRepo="https://github.com/PulpoI/turnero"
+              linkRepo="https://dalp.com.ar/"
               linkDemo="https://dalp.com.ar/"
+            />
+            <Project
+              title="Tienda Tuco Remeras"
+              photoFront={tiendaTuco}
+              photoBack={tiendaTuco2}
+              description="E-commerce desarrollado con Wordpress."
+              linkRepo="https://tienda.tucoremeras.com.ar/"
+              linkDemo="https://tienda.tucoremeras.com.ar/"
             />
             <Project
               title="Turnero"
               photoFront={turnero2}
               photoBack={turnero}
-              description="E-commerce desarrollado con React.js. Axios,
-              Firebase, Bootstrap, React-bootstrap, React-router-dom."
+              description="Sistema de turnos para Peluqería desarrollado con React.js, Redux, Firebase, Bootstrap, React-router-dom."
               linkRepo="https://github.com/PulpoI/turnero"
               linkDemo="https://turnero.pulpol.com.ar/"
             />
