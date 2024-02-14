@@ -19,10 +19,12 @@ import presupuestador from "../../assets/presupuestador.png";
 import presupuestador1 from "../../assets/presupuestador-back.png";
 import turnero from "../../assets/turnero.png";
 import turnero2 from "../../assets/turnero-back.png";
-import dalp from "../../assets/diseno-a.png";
-import dalp2 from "../../assets/diseno-a-back.png";
-import tiendaTuco from "../../assets/tuco-tienda.png";
-import tiendaTuco2 from "../../assets/tuco-tienda-back.png";
+import gastoscompartidos from "../../assets/gastos-compartidos.png";
+import gastoscompartidos2 from "../../assets/gastos-compartidos-back.png";
+// import dalp from "../../assets/diseno-a.png";
+// import dalp2 from "../../assets/diseno-a-back.png";
+// import tiendaTuco from "../../assets/tuco-tienda.png";
+// import tiendaTuco2 from "../../assets/tuco-tienda-back.png";
 
 //Components
 import Project from "./Project";
@@ -49,23 +51,31 @@ function Projects() {
             <h2 className="section-title">PROYECTOS</h2>
           </div>
 
-          <div className="project-content ">
+          <div className="project-content projects-container">
             <Project
+              title="Gastos compartidos"
+              photoFront={gastoscompartidos}
+              photoBack={gastoscompartidos2}
+              description="Sistema de gastos compartidos desarrollado con PHP, MySQL, React.js, React-router-dom, Tailwind."
+              linkRepo="https://github.com/PulpoI/gastos-en-comun"
+              linkDemo="https://gastoscompartidos.pulpol.com.ar/"
+            />
+            {/* <Project
               title="DALP"
               photoFront={dalp}
               photoBack={dalp2}
               description="Marketplace desarrollado con Wordpress."
               linkRepo="https://dalp.com.ar/"
               linkDemo="https://dalp.com.ar/"
-            />
-            <Project
+            /> */}
+            {/* <Project
               title="Tienda Tuco Remeras"
               photoFront={tiendaTuco}
               photoBack={tiendaTuco2}
               description="E-commerce desarrollado con Wordpress."
               linkRepo="https://tienda.tucoremeras.com.ar/"
               linkDemo="https://tienda.tucoremeras.com.ar/"
-            />
+            /> */}
             <Project
               title="Turnero"
               photoFront={turnero2}

@@ -46,7 +46,7 @@ function App() {
             element={<Main render={<Contact />} />}
           ></Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

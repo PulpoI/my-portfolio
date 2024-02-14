@@ -3,19 +3,19 @@
   position: absolute;
   top: 0px;
   left: 5px;
+  z-index: 100;
 }
-@media (max-width: 576px){
-.logo{
-  width: 75px;
-  position: absolute;
-  top: 0px;
-  left: 5px;
+@media (max-width: 576px) {
+  .logo {
+    width: 75px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+  }
 }
-}
-
 
 .wobble-ver-left:hover {
-	animation: wobble-ver-left 1.8s infinite  both ;
+  animation: wobble-ver-left 1.8s infinite both;
 }
 
 /* ----------------------------------------------
@@ -30,7 +30,7 @@
  * animation wobble-ver-left
  * ----------------------------------------
  */
- @keyframes wobble-ver-left {
+@keyframes wobble-ver-left {
   0%,
   100% {
     transform: translateY(0) rotate(0);
@@ -52,4 +52,3 @@
     transform: translateY(-6px) rotate(-1.2deg);
   }
 }
-
