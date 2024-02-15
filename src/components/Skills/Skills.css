@@ -3,21 +3,18 @@
   justify-content: center;
 } */
 
-
-
-
 @keyframes scroll {
   0% {
     transform: translateX(calc(250px * 10));
-  } 
+  }
   100% {
     transform: translateX(0);
-  } 
+  }
 }
 
 .slider-container {
   position: relative;
-    top: 12rem;
+  top: 12rem;
 }
 .slider {
   height: 470px;
@@ -32,7 +29,6 @@
   display: flex;
   width: calc(250px * 20);
 }
-
 
 .slider .slide {
   height: 100px;
@@ -50,11 +46,9 @@
 }
 
 .skills-item i {
-  font-size:6rem;
+  font-size: 6rem;
   color: #fff;
 }
-
-
 
 .skills-item {
   display: flex;
@@ -70,59 +64,79 @@
 }
 
 /* hovers logos */
-.skills-item .bxl-html5:hover{
+.skills-item .bxl-php:hover {
   transform: scale(1.1);
-  color: #F75421;
-  transition: 0.3s  ease-in-out;
+  color: #777bb3;
+  transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-css3:hover{
+.skills-item .bxl-typescript:hover {
+  transform: scale(1.1);
+  fill: #2d79c7 !important;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxs-data:hover {
+  transform: scale(1.1);
+  color: #00799c;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-html5:hover {
+  transform: scale(1.1);
+  color: #f75421;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-css3:hover {
   transform: scale(1.1);
   color: #2196f3;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-javascript:hover{
+.skills-item .bxl-javascript:hover {
   transform: scale(1.1);
-  color: #F0DB4F;
+  color: #f0db4f;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-react:hover{
+.skills-item .bxl-react:hover {
   transform: scale(1.1);
-  color: #61DBFB;
+  color: #61dbfb;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-redux:hover{
+.skills-item .bxl-redux:hover {
   transform: scale(1.1);
-  color: #764ABC;
+  color: #764abc;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-jquery:hover{
+.skills-item .bxl-jquery:hover {
   transform: scale(1.1);
-  color: #0868AB;
+  color: #0868ab;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-sass:hover{
+.skills-item .bxl-sass:hover {
   transform: scale(1.1);
-  color: #CD669A;
+  color: #cd669a;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-bootstrap:hover{
+.skills-item .bxl-bootstrap:hover {
   transform: scale(1.1);
-  color: #7309F5;
+  color: #7309f5;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-git:hover{
+.skills-item .bxl-tailwind-css:hover {
   transform: scale(1.1);
-  color: #DE4C36;
+  color: #38bdf8;
   transition: 0.3s ease-in-out;
 }
-.skills-item .bxl-github:hover{
+.skills-item .bxl-git:hover {
+  transform: scale(1.1);
+  color: #de4c36;
+  transition: 0.3s ease-in-out;
+}
+.skills-item .bxl-github:hover {
   transform: scale(1.1);
   color: #000000;
   transition: 0.3s ease-in-out;
   text-shadow: gray 0px 0px 2px;
 }
-.skills-item .bxl-wordpress:hover{
+.skills-item .bxl-wordpress:hover {
   transform: scale(1.1);
-  color: #1B769C;
+  color: #1b769c;
   transition: 0.3s ease-in-out;
 }

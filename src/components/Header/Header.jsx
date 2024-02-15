@@ -1,5 +1,4 @@
 import React from "react";
-import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -9,61 +8,58 @@ const Header = () => {
       <header className="header color-change-2x">
         <nav>
           <ul className="focus-in-contract-bck">
-            <NavDropdown.Item href="#">
-              <Link to="/about">
-                <li className="text-flicker-in-glow">
-                  <span className="flicker-3">{"<"}</span>
-                  Sobre mi
-                  <span>{" />"}</span>
-                </li>
+            <li className="text-flicker-in-glow">
+              <Link title="Sobre mi" to="/about">
+                <span className="flicker-3">{"<"}</span>
+                Sobre mi
+                <span>{" />"}</span>
               </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#">
-              <Link to="/projects">
-                <li className="text-flicker-in-glow">
-                  <span className="flicker-3">{"<"}</span>
-                  Proyectos
-                  <span>{" />"}</span>
-                </li>
+            </li>
+            <li className="text-flicker-in-glow">
+              <Link title="Proyectos" to="/projects">
+                <span className="flicker-3">{"<"}</span>
+                Proyectos
+                <span>{" />"}</span>
               </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#">
-              <Link to="/skills">
-                <li className="text-flicker-in-glow">
-                  <span className="flicker-3">{"<"}</span>
-                  Skills
-                  <span>{" />"}</span>
-                </li>
+            </li>
+            <li className="text-flicker-in-glow">
+              <Link title="Skills" to="/skills">
+                <span className="flicker-3">{"<"}</span>
+                Skills
+                <span>{" />"}</span>
               </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#">
-              <Link to="/contact">
-                <li className="text-flicker-in-glow">
-                  <span className="flicker-3">{"<"}</span>
-                  Contacto
-                  <span>{" />"}</span>
-                </li>
+            </li>
+            <li className="text-flicker-in-glow">
+              <Link title="Contacto" to="/contact">
+                <span className="flicker-3">{"<"}</span>
+                Contacto
+                <span>{" />"}</span>
               </Link>
-            </NavDropdown.Item>
+            </li>
           </ul>
         </nav>
       </header>
       <div className="footer-items">
-        <a
-          href="https://www.linkedin.com/in/pablo--duarte/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="footer-item">
-            <i class="bx bxl-linkedin-square"></i>
-          </div>
-        </a>
-
-        <a href="https://github.com/PulpoI" target="_blank" rel="noreferrer">
-          <div className="footer-item">
-            <i class="bx bxl-github"></i>{" "}
-          </div>
-        </a>
+        <div className="footer-item">
+          <a
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/pablo--duarte/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
+        <div className="footer-item">
+          <a
+            title="Github"
+            href="https://github.com/PulpoI"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bx bxl-github"></i>{" "}
+          </a>
+        </div>
       </div>
     </>
   );

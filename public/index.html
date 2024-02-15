@@ -1,33 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<html lang="es">
 
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pablo Duarte - Portfolio">
+  <meta property="og:description"
+    content="Soy Pablo Duarte, un desarrollador Full Stack con base en Chacabuco, Buenos Aires. Actualmente, trabajo en Zetenta, donde diseño y desarrollo soluciones web innovadoras. Echa un vistazo a mi portafolio y descubre cómo puedo ayudarte a llevar tus proyectos digitales al siguiente nivel. ">
+  <meta property="og:url" content="https://pulpol.com.ar/">
+  <meta property="og:site_name" content="Pablo Duarte - Fullstack developer">
+  <meta property="og:image" content="https://pulpol.com.ar/web.png">
+  <meta property="og:image:width" content="1366" />
+  <meta property="og:image:height" content="623" />
+  <meta property="og:image:type" content="image/png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Pablo Duarte",
+      "jobTitle": "Desarrollador Full Stack",
+      "image": "https://pulpol.com.ar/web.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chacabuco",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "Argentina"
+      },
+      "url": "https://pulpol.com.ar/,
+      "sameAs": [
+        "https://www.linkedin.com/in/pablo--duarte/",
+        "https://github.com/PulpoI"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Zetenta"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Zetenta",
+          "url": "https://www.zetenta.com"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "ISPC",
+          "url": "https://www.ispc.edu.ar"
+        }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Desarrollador Web"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Pablo Duarte"
+      }
+    }
+    </script>
+
+
+
+
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!--
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -36,12 +87,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Pablo Duarte - Portfolio</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Pablo Duarte - Portfolio</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -51,23 +103,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script
-      src="https://unpkg.com/react/umd/react.production.min.js"
-      crossorigin
-    ></script>
+  <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 
-    <script
-      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-      crossorigin
-    ></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
 
-    <script
-      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin
-    ></script>
+  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
 
-    <script>
-      var Alert = ReactBootstrap.Alert;
-    </script>
-  </body>
+  <script>
+    var Alert = ReactBootstrap.Alert;
+  </script>
+</body>
+
 </html>

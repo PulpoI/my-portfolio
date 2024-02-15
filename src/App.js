@@ -1,7 +1,7 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Main from "./components/Main/Main";
-import video from "./assets/202206012002.mp4";
+import video from "./assets/video-hero.mp4";
 import Perfil from "./components/Perfil/Perfil";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -28,23 +28,12 @@ function App() {
         <div className="capa"></div>
         <Routes>
           <Route exact path="/" element={<Main render={<Perfil />} />} />
-          <Route exact path="/about" element={<Main render={<About />} />} />
-
-          <Route
-            exact
-            path="/projects"
-            element={<Main render={<Projects />} />}
-          />
-          <Route
-            exact
-            path="/skills"
-            element={<Main render={<Skills />} />}
-          ></Route>
-          <Route
-            exact
-            path="/contact"
-            element={<Main render={<Contact />} />}
-          ></Route>
+          <Route path="/about" element={<Main render={<About />} />} />
+          <Route path="/projects" element={<Main render={<Projects />} />} />
+          <Route path="/skills" element={<Main render={<Skills />} />} />
+          <Route path="/contact" element={<Main render={<Contact />} />} />
+          {/* Ruta para manejar todas las demás rutas */}
+          <Route path="/*" element={<Main render={<Perfil />} />} />
         </Routes>
         {/* <Footer /> */}
       </div>

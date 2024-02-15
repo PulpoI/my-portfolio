@@ -39,42 +39,42 @@ function Contact() {
               </p>
             </div>
             <div className="contact-items">
-              <a
-                href="https://www.linkedin.com/in/pablo--duarte/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="contact-item">
-                  <i class="bx bxl-linkedin-square"></i>
-                </div>
-              </a>
-              <a
-                href="mailto:pablod.dev@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="contact-item">
-                  <i class="bx bxl-gmail"></i>{" "}
-                </div>
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=542352407827"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="contact-item">
-                  <i class="bx bxl-whatsapp"></i>{" "}
-                </div>
-              </a>
-              <a
-                href="https://github.com/PulpoI"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="contact-item">
-                  <i class="bx bxl-github"></i>{" "}
-                </div>
-              </a>
+              <div className="contact-item">
+                <a
+                  href="https://www.linkedin.com/in/pablo--duarte/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bx bxl-linkedin-square"></i>
+                </a>
+              </div>
+              <div className="contact-item">
+                <a
+                  href="mailto:pablod.dev@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bx bxl-gmail"></i>{" "}
+                </a>
+              </div>
+              <div className="contact-item">
+                <a
+                  href="https://api.whatsapp.com/send?phone=542352407827"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bx bxl-whatsapp"></i>{" "}
+                </a>
+              </div>
+              <div className="contact-item">
+                <a
+                  href="https://github.com/PulpoI"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bx bxl-github"></i>{" "}
+                </a>
+              </div>
             </div>
           </div>
         </>
