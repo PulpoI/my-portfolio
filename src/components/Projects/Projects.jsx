@@ -81,8 +81,9 @@ function Projects() {
               photoFront={turnero2}
               photoBack={turnero}
               description="Sistema de turnos para Peluqería desarrollado con React.js, Redux, Firebase, Bootstrap, React-router-dom."
-              linkRepo="https://github.com/PulpoI/turnero"
-              linkDemo="https://turnero.pulpol.com.ar/"
+              // linkRepo="https://github.com/PulpoI/turnero"
+              linkDemo="https://demo.turnando.com"
+              linkSite="https://turnando.com"
             />
             <hr />
             <Project
@@ -92,7 +93,7 @@ function Projects() {
               description="E-commerce desarrollado con React.js. Axios,
               Firebase, Bootstrap, React-bootstrap, React-router-dom."
               linkRepo="https://github.com/PulpoI/tucostore"
-              linkDemo="https://store.tucoremeras.com.ar/"
+              linkDemo="https://tucostore.pulpol.com.ar/"
             />
 
             <Project
@@ -101,7 +102,7 @@ function Projects() {
               photoBack={presupuestador1}
               description="Presupuestador de servicio de Fotografía. Realizado en React.js. Firebase, Bootstrap, React-router-dom."
               linkRepo="https://github.com/PulpoI/presupuestador"
-              linkDemo="https://presupuestador.camilagonzalez.ar/"
+              linkDemo="https://presupuestador.camilagonzalezfotografia.com.ar/"
             />
 
             <Project
@@ -110,7 +111,7 @@ function Projects() {
               photoBack={cgFoto2}
               description="Perfil profesional desarrollado con HTML, CSS y SASS. Bootstrap y PHP para recibir los datos del formulario."
               linkRepo="https://github.com/PulpoI/CG-Fotografia"
-              linkDemo="https://camilagonzalez.ar/"
+              linkDemo="https://www.camilagonzalezfotografia.com.ar/"
             />
             <Project
               title="Creador - Mocked"
@@ -118,7 +119,7 @@ function Projects() {
               photoBack={creador1}
               description="Web App para servicio de estampados. Código adaptado con permiso. Leer README para mas info."
               linkRepo="https://github.com/PulpoI/creador-tuco-remeras"
-              linkDemo="https://creador.tucoremeras.com.ar/"
+              linkDemo="https://creador.pulpol.com.ar/"
             />
 
             <Project
@@ -137,7 +138,7 @@ function Projects() {
               description="Tuco Remeras es mi emprendimiento de estampados textiles. El
               desarrollo esta adaptado de una plantilla."
               linkRepo="https://github.com/PulpoI/tuco-remeras"
-              linkDemo="https://tucoremeras.com.ar/"
+              linkDemo="https://tucoremeras.pulpol.com.ar/"
             />
           </div>
         </div>

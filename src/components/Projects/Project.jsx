@@ -8,6 +8,7 @@ function Project({
   description,
   linkRepo,
   linkDemo,
+  linkSite,
 }) {
   const [photo, setPhoto] = useState(photoFront);
 
@@ -32,12 +33,21 @@ function Project({
       />
 
       <div className="project-buttons">
-        <a href={linkRepo} target="_blank" rel="noreferrer">
-          <button className="project-button">Repo</button>
-        </a>
-        <a href={linkDemo} target="_blank" rel="noreferrer">
-          <button className="project-button">Demo</button>
-        </a>
+        {linkSite && (
+          <a href={linkSite} target="_blank" rel="noreferrer">
+            <button className="project-button">Site</button>
+          </a>
+        )}
+        {linkDemo && (
+          <a href={linkDemo} target="_blank" rel="noreferrer">
+            <button className="project-button">Demo</button>
+          </a>
+        )}
+        {linkRepo && (
+          <a href={linkRepo} target="_blank" rel="noreferrer">
+            <button className="project-button">Code</button>
+          </a>
+        )}
       </div>
     </div>
   );

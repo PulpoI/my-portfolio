@@ -54,6 +54,14 @@ const Skills = () => {
               <i className="bx bxl-react"> </i>
               <h3>React</h3>
             </div>
+            {/* <div className="skills-item">
+              <i className="bx bxl-next"> </i>
+              <h3>Next.js</h3>
+            </div> */}
+            <div className="skills-item">
+              <i className="bx bxl-redux"> </i>
+              <h3>Redux</h3>
+            </div>
             <div className="skills-item">
               <i className="bx bxl-redux"> </i>
               <h3>Redux</h3>
