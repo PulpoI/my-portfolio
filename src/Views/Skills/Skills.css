@@ -140,3 +140,24 @@
   color: #1b769c;
   transition: 0.3s ease-in-out;
 }
+
+
+.skills-item .bxl-nextjs:before {
+  content: '';
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background-color: white; 
+  -webkit-mask-image: url('../../assets/icons/next-js.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url('../../assets/icons/next-js.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+.skills-item .bxl-nextjs:hover::before {
+  transform: scale(1.1);
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "./Projects.css";
 
 //Photos
-import Logo from "../Header/Logo";
+import Logo from "../../components/Header/Logo";
 import storeTuco from "../../assets/tuco-store.png";
 import storeTuco2 from "../../assets/tuco-store-back.png";
 import tucoRemeras from "../../assets/tuco-remeras.png";
@@ -27,11 +27,110 @@ import gastoscompartidos2 from "../../assets/gastos-compartidos-back.png";
 // import tiendaTuco2 from "../../assets/tuco-tienda-back.png";
 
 //Components
-import Project from "./Project";
-import Loader from "../Loader/Loader";
+import Project from "../Projects/Project";
+import Loader from "../../components/Loader/Loader";
+import { Link, useParams } from "react-router-dom";
 
 function Projects() {
   const [loading, setLoading] = useState(false);
+  const { id } = useParams();
+
+  const projects = [
+    {
+      id: "amalgama",
+      title: "Amalgama",
+      description: "Amalgama es una empresa de desarrollo de software.",
+      list: [
+        {
+          id: "amalgama-1",
+          title: "Clazzy Studio",
+          description: "Desarrollo del sitio web de Clazzy Studio.",
+          linkSite: "https://clazzystudio.com/",
+        },
+        {
+          id: "amalgama-2",
+          title: "Yalamps",
+          description: "Desarrollo del sitio web de Yalamps.",
+          linkSite: "https://www.yalamps.com/",
+        },
+        {
+          id: "amalgama-5",
+          title: "Mercy Seat",
+          description: "Desarrollo del sitio web de Mercy Seat.",
+          linkSite: "https://mercyseat.app/",
+        },
+        {
+          id: "amalgama-3",
+          title: "Sexitive",
+          description: "Desarrollo del sitio web de Sexitive.",
+          linkSite: "https://clientes.sexitive.com/",
+        },
+        {
+          id: "amalgama-7",
+          title: "Contagram - Academia Online",
+          description: "Desarrollo del sitio web de Contagram.",
+          linkSite: "https://play.contagram.com/",
+        },
+        {
+          id: "amalgama-6",
+          title: "Draperhouse",
+          description: "Desarrollo del sitio web de Draperhouse.",
+          linkSite: "https://draperhouseamericas.com/",
+        },
+        {
+          id: "amalgama-4",
+          title: "Sac",
+          description: "Desarrollo del sitio web de Sac.",
+          linkSite: "https://www.sac.org.ar/",
+        },
+
+      ],
+    },
+    {
+      id: "zetenta",
+      title: "Zetenta",
+      description: "Zetenta es una empresa de desarrollo de software.",
+      list: [
+        {
+          id: "1",
+          title: "Wellknows",
+          description: "Desarrollo de la web de Wellknows.",
+          linkSite: "https://www.wellknows.com/",
+        },
+        {
+          id: "3",
+          title: "Together",
+          description: "Desarrollo de la web de Together.",
+          linkSite: "https://www.together.com.ar/",
+        },
+        {
+          id: "5",
+          title: "Hussek",
+          description: "Desarrollo de la web de Hussek.",
+          linkSite: "https://www.hussek.com/",
+        },
+        {
+          id: "6",
+          title: "Bambu-ex",
+          description: "Desarrollo de la web de Bambu-ex.",
+          linkSite: "https://bambu-ex.vercel.app/",
+        },
+        {
+          id: "7",
+          title: "Aeroclub Capitan Sarmiento",
+          description: "Desarrollo de la web de Aeroclub Capitan Sarmiento.",
+          linkSite: "https://aeroclubcapitansarmiento.com/",
+        },
+        {
+          id: "4",
+          title: "Zetenta",
+          description: "Ajustes, mantenimiento y soporte de la web de Zetenta.",
+          linkSite: "https://zetenta.com/",
+        },
+    
+      ],
+    },
+  ];
 
   useEffect(() => {
     setLoading(true);
@@ -48,15 +147,20 @@ function Projects() {
       ) : (
         <div className="project-content slide-in-blurred-bl">
           <div>
-            <h2 className="section-title">PROYECTOS</h2>
+            {!id ? (
+              <h2 className="section-title">PROYECTOS</h2>
+            ) : (
+              <h2 className="section-title">TRABAJOS en {id.toLocaleUpperCase()}</h2>
+            )}
           </div>
 
-          <div className="project-content projects-container">
-            <Project
-              title="Gastos compartidos"
-              photoFront={gastoscompartidos}
-              photoBack={gastoscompartidos2}
-              description="Sistema de gastos compartidos desarrollado con PHP, MySQL, React.js, React-router-dom, Tailwind."
+          {!id ? (
+            <div className="project-content projects-container">
+              <Project
+                title="Gastos compartidos"
+                photoFront={gastoscompartidos}
+                photoBack={gastoscompartidos2}
+                description="Sistema de gastos compartidos desarrollado con PHP, MySQL, React.js, React-router-dom, Tailwind."
               linkRepo="https://github.com/PulpoI/gastos-en-comun"
               linkDemo="https://gastoscompartidos.pulpol.com.ar/"
             />
@@ -141,6 +245,18 @@ function Projects() {
               linkDemo="https://tucoremeras.pulpol.com.ar/"
             />
           </div>
+          ) : (
+            <div className="project-content projects-container">
+              {projects.find((project) => project.id === id).list.map((item) => (
+                <Project
+                  key={item.id}
+                  title={item.title}
+                  description={item.description}
+                  linkSite={item.linkSite}
+                />
+              ))}
+            </div>
+          )}
         </div>
       )}
     </>

@@ -22,15 +22,19 @@ function Project({
     <div className="project-container">
       <div className="project-text">
         <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
+        {description && (
+          <p className="project-description">{description}</p>
+        )}
       </div>
-      <img
-        onMouseOver={mouseHover}
-        onMouseOut={backImage}
-        className="project-img"
-        src={photo}
-        alt={`Imagen del proyecto ${title}`}
-      />
+      {photo && (
+        <img
+          onMouseOver={mouseHover}
+          onMouseOut={backImage}
+          className="project-img"
+          src={photo}
+          alt={`Imagen del proyecto ${title}`}
+        />
+      )}
 
       <div className="project-buttons">
         {linkSite && (

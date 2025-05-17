@@ -1,10 +1,10 @@
-import Header from "../Header/Header";
-import Logo from "../Header/Logo";
+import Header from "../../components/Header/Header";
+import Logo from "../../components/Header/Logo";
 import "../About/About";
 import "./Contact.css";
 import photo from "./../../assets/profile-2.png";
 import { useEffect, useState } from "react";
-import Loader from "../Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import { Link } from "react-router-dom";
 
 function Contact() {

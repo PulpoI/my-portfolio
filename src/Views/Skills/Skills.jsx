@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import "./Skills.css";
-import Logo from "../Header/Logo";
-import Loader from "../Loader/Loader";
+import Logo from "../../components/Header/Logo";
+import Loader from "../../components/Loader/Loader";
 const Skills = () => {
   const [loading, setLoading] = useState(false);
 
@@ -51,16 +51,12 @@ const Skills = () => {
               <h3>TypeScript</h3>
             </div>
             <div className="skills-item">
+              <i className="bx bxl-nextjs"> </i>
+              <h3>Next.js</h3>
+            </div>
+            <div className="skills-item">
               <i className="bx bxl-react"> </i>
               <h3>React</h3>
-            </div>
-            {/* <div className="skills-item">
-              <i className="bx bxl-next"> </i>
-              <h3>Next.js</h3>
-            </div> */}
-            <div className="skills-item">
-              <i className="bx bxl-redux"> </i>
-              <h3>Redux</h3>
             </div>
             <div className="skills-item">
               <i className="bx bxl-redux"> </i>

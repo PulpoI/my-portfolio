@@ -1,5 +1,5 @@
 import photo from "../../assets/perfil.png";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 
 function Perfil() {
   return (

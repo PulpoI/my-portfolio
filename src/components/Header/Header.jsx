@@ -16,6 +16,13 @@ const Header = () => {
               </Link>
             </li>
             <li className="text-flicker-in-glow">
+              <Link title="Experiencia" to="/experience">
+                <span className="flicker-3">{"<"}</span>
+                Experiencia
+                <span>{" />"}</span>
+              </Link>
+            </li>
+            <li className="text-flicker-in-glow">
               <Link title="Proyectos" to="/projects">
                 <span className="flicker-3">{"<"}</span>
                 Proyectos
