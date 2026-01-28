@@ -53,7 +53,7 @@ function Experience() {
               icon={<img src={logo_amalgama} alt="logo" />}
             >
               <h3 className="vertical-timeline-element-title">
-                Desarrollador Web
+                Full Stack Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 <a
@@ -63,17 +63,10 @@ function Experience() {
                 >
                   Amalgama
                 </a>{" "}
-                <a
-                  href="https://clazzystudio.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  (Clazzy Studio)
-                </a>
               </h4>
               <p style={{ marginBottom: "1rem" }}>
                 Desarrollo de sitios web, utilizando tecnologías como React,
-                Next.js, Wordpress, entre otras.
+                Next.js, Wordpress, Webflow, FlutterFlow. También desarrollo aplicaciones móviles con React Native y Ruby on Rails.
               </p>
               <Link to={"/projects/amalgama"}>
                 <button className="project-button">Trabajos</button>
@@ -100,7 +93,7 @@ function Experience() {
               icon={<img src={logo_zetenta} alt="logo" />}
             >
               <h3 className="vertical-timeline-element-title">
-                Desarrollador Web
+                Full Stack Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 <a

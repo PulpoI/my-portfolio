@@ -24,6 +24,8 @@ const Skills = () => {
           </div>
 
           <div className="skills-container slide-in-blurred-bl">
+
+        
             <div className="skills-item">
               <i className="bx bxl-php"> </i>
               <h3>PHP</h3>
@@ -97,6 +99,22 @@ const Skills = () => {
             <div className="skills-item">
               <i className="bx bxl-wordpress"> </i>
               <h3>WordPress </h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-supabase"> </i>
+              <h3>Supabase</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-make"> </i>
+              <h3>Make</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-webflow"> </i>
+              <h3>Webflow</h3>
+            </div>
+            <div className="skills-item">
+              <i className="bx bxl-flutterflow"> </i>
+              <h3>FlutterFlow</h3>
             </div>
           </div>
 

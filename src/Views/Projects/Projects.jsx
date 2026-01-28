@@ -42,6 +42,12 @@ function Projects() {
       description: "Amalgama es una empresa de desarrollo de software.",
       list: [
         {
+          id: "amalgama-0",
+          title: "The Neo Plex",
+          description: "Desarrollo del sitio web de The Neo Plex.",
+          linkSite: "https://www.theneoplex.com/",
+        },
+        {
           id: "amalgama-1",
           title: "Clazzy Studio",
           description: "Desarrollo del sitio web de Clazzy Studio.",
@@ -52,6 +58,12 @@ function Projects() {
           title: "Yalamps",
           description: "Desarrollo del sitio web de Yalamps.",
           linkSite: "https://www.yalamps.com/",
+        },
+        {
+          id: "amalgama-33",
+          title: "Sunya (Lab)",
+          description: "Desarrollo del sitio web de Sunya (Lab).",
+          linkSite: "https://sunya-nextjs.vercel.app/",
         },
         {
           id: "amalgama-5",
