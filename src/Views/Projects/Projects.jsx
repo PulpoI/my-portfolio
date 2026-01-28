@@ -29,7 +29,7 @@ import gastoscompartidos2 from "../../assets/gastos-compartidos-back.png";
 //Components
 import Project from "../Projects/Project";
 import Loader from "../../components/Loader/Loader";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Projects() {
   const [loading, setLoading] = useState(false);

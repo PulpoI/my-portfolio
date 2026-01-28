@@ -7,7 +7,6 @@ import About from "./Views/About/About";
 import Projects from "./Views/Projects/Projects";
 import Skills from "./Views/Skills/Skills";
 import Contact from "./Views/Contact/Contact";
-import { Footer } from "./components/Footer/Footer";
 import Experience from "./Views/Experience/Experience";
 
 function App() {
